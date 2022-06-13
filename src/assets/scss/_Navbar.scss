@@ -1,0 +1,8 @@
+.main-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    .nav-link{
+        list-style: none;
+    }
+}
