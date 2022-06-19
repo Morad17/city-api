@@ -2,7 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    float:right;
+
     .nav-link{
         list-style: none;
+        padding: 5px;
+    }
+    
+    .nav-list{
+        padding: 10px;
+        margin: 0;
     }
 }
