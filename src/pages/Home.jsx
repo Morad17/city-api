@@ -1,9 +1,13 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import { useEffect } from 'react'
 
 const Home = () => {
+
+  
+
   return (
     <div className="home">
+
     </div>
   )
 }
