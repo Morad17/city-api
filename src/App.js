@@ -3,20 +3,20 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CityDetails from "./pages/CityDetails";
 
-import { getCities } from './api'
+// import { getCities } from './api'
 import Navbar from "./components/Navbar";
 
 const App = () => {
 
-  const [cities, setCities] = useState([])
+  // const [cities, setCities] = useState([])
   
-  useEffect(()=> {
-    getCities()
-      .then((data) => {
-        console.log(data)
-        setCities(data)
-      })
-  }, [])
+  // useEffect(()=> {
+  //   getCities()
+  //     .then((data) => {
+  //       console.log(data)
+  //       setCities(data)
+  //     })
+  // }, [])
   
 
 return (
