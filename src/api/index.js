@@ -1,5 +1,6 @@
 import axios from "axios";
 
+import { useState } from "react";
 
 
 // export const getCities = async (cityName) => {
@@ -36,7 +37,6 @@ export const getAllCities = async (allCities) => {
   const options = {
       
       params: { 
-        limit: 9 
       },
       headers: {
         'X-RapidAPI-Key': 'c433fbdd9cmshb778d9443e01b92p102a18jsnaa87bc28776b',
@@ -45,10 +45,13 @@ export const getAllCities = async (allCities) => {
   };
 
     try{
-       const {data : {data}} = await axios.get(URL, options)
-      const allData = data[0]
-      console.log(allData)
-      return allData
+      const {data : {data}} = await axios.get(URL, options)
+      const allData = data.map((e) => {
+       return e.city
+      })
+      const allCity = allData
+      console.log(allCity)
+      return allCity
        
     } catch (error) {
 
